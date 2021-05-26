@@ -45,6 +45,8 @@ console.log(`https://someurl.com/${category}/5`);
 // const user = "Ivan";
 // alert(`Привет, ${user}`);
 
+
+// Задание
 // const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','');
 let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?','');
 console.log(numberOfFilms);
@@ -65,7 +67,62 @@ let lastOfFilms = prompt('Один из последних просмотрен�
 personalMovieDB.movies[lastOfFilms] = costOfFilms;
 personalMovieDB.movies[lastOfFilms2] = costOfFilms2;
 console.log(personalMovieDB);
+// Конец задания
 
+const num = 50;
 
+if (num < 49) {
+    console.log('Error');
+} else if (num >100) {
+    console.log('Много');
+} else {
+    console.log('Ок!');
+}
 
+(num === 50) ? console.log('Ок!') : console.log('Error');
+ 
+switch (num) {
+    case 49:
+        console.log('Неверно');
+        break;
+    case 100:
+        console.log('Неверно');
+        break;
+    case 50:
+        console.log('В точку!');
+        break;
+    default:
+        console.log('Не в этот раз');
+        break;
+}
 
+let numbers = 50;
+
+// while (numbers <= 55 ) {
+//     console.log(numbers);
+//     numbers++;
+// }
+
+// do {
+//     console.log(numbers);
+//     numbers++;
+// }
+// while (numbers < 55 );
+
+// for (let i = 1; i < 8; i++) {
+//     // console.log(i);
+//     console.log(numbers);
+//     numbers++;
+// }
+
+for (let i = 1; i < 8; i++) {
+    // Делаем досрочный выход из цикла по условию
+    if (i === 6) {
+        break;
+    }
+    // Пропускаем только не нужный шаг
+    if (i === 3) {
+         continue;
+    }  
+    console.log(i);
+}
